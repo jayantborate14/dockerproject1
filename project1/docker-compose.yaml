@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  app1:
+    build:
+      context: /App1/
+      dockerfile: Dockerfile
+    container_name: myapp1cr
+    image: mycustomeimage_app1
+    ports:
+      - 1234:80
+  app2:
+    build:
+      context: /App2/
+      dockerfile: Dockerfile
+    container_name: myapp2cr
+    image: mycustomeimage_app2
+    ports:
+      - 1235:80  
+  app3:
+    build:
+      context: /App3/
+      dockerfile: Dockerfile
+    container_name: myapp3cr
+    image: mycustomeimage_app3
+    ports:
+      - 1236:80  
